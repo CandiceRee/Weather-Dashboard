@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;;
+    margin:0px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header{
+    display:inline-flexbox;
+    padding: 20px;
+    background-color: midnightblue;
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header h1{
+    color:whitesmoke;
+    text-align: center;
+}
+
+header div{
+    padding:15px;
+    margin:20px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+#results{
+    float: right;
+    width:75%;
+    display: inline;
+    height:1000px;
+    padding: 20px;
+}
+
+#answers{
+    border: black solid 1px;
+    width: 100%;
+    height:350px;
+    padding:20px;
+}
+
+#forecast{
+    border:black solid 1px;
+    width:100%;
+    height:300px;
+    padding:20px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#title h1{
+    text-align: center;
+}
+
+#day{
+    margin-top:100px;
+    
+}
+
+#weather{
+    border:black solid 1px;
+    width:100%;
+    display: inline;
+    padding: 85px;
+    margin:20px;
+    margin-top: 50px;
+}
+
+#travel{
+    width:25%;
+    height:1000px;
+    float:left;
+    display: inline;
+    padding: 20px;
+}
+
+#search,
+#storage{
+    width:100%;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+#getCity{
+    background-color: cornflowerblue;
+    color: black;
+    width:100%;
+    height:25px;
+    border-radius:15px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+#clearHistory{
+    background-color: forestgreen;
+    color: black;
+    width:100%;
+    height:25px;
+    border-radius:15px;
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+footer h2{
+    color:midnightblue;
+    clear: both;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+

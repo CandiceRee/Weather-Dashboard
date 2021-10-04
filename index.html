@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"/>
+         <link rel="stylesheet" href="style.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                <title>Weather Dashboard</title>
+                <header>
+            <h1>Weather Dashboard</h1>
+        </header>
+</head>
+    <body>
+        <script src="assets/script.js"></script>
+        <section id="results">
+            <article id="answers">
+                <span id="cityName"></span>
+                <div>
+                <p id="temperature"></p>
+                </div>
+                <div>
+                    <p id="humidity"></p>
+                    </div>
+                <div>
+                    <p id="windSpeed"></p>
+                </div>
+                <div>
+                    <p id="UVindex"></p>
+                    </div>
+            </article>
+            <article id="forecast">
+                <div id="title">
+                    <h1>5-Day Forecast</h1>
+                </div>
+                <div id="day">
+                <div id="weather"></div>
+                <div id="weather"></div>
+                <div id="weather"></div>
+                <div id="weather"></div>
+                <div id="weather"></div>
+                </div> 
+            </article>
+        </section>
+        <section id="travel">
+             <h1>Search for a City:</h1>
+             <input id="search" placeholder="Enter City Name"></input>
+             <button id="getCity">Search</button>
+             <button id="clearHistory">Clear History</button>
+             <form id="history"></form>
+        </section>
+    </body>
+    <footer>
+        <h2>Safe Travels <3</h2>
+    </footer>
+</html>
