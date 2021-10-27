@@ -12,11 +12,11 @@ function weather(){
 var APIKey= "096da4fe0f52722ad1e8d2f87be98cf8";
 
 function getWeather(cityName){
-fetch("https://api.openweathermap.org/data/2.5/weather?q="+ cityName+ "&appid"+APIKey)
+fetch("http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={API key}"+ cityName+ "&appid"+APIKey)
 .then(function(response){
     console.log(response);
 
-var currentDate=new Date(response.data.dt*1000);
+var currentDate=new Date(response.data.Date*1000);
 console.log(currentDate);
 var day=currentDate.getDate();
 var month=currentDate.getMonth()+1;
@@ -27,7 +27,7 @@ humdity.innerHTML="Humidity:"+response.data.main.humdity+"%";
 windSpeed.innerHTML="Wind Speed:"+response.data.wind.speed+"MPH";
 var lat=response.data.coord.lat;
 var lon= response.data.coord.lon;
-fetch("https://api.openweathermap.org/data/2.5/uvi/forecast?lat="+lat+"&lon="+lon+"&appid="+APIKey+"&cnt=1")
+fetch("http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={API key}"+lat+"&lon="+lon+"&appid="+APIKey+"&cnt=1")
 .then(function(response){
     var UVIndex = document.createElement("span");
     UVIndex.innerHTML=response.data[0].value;
@@ -36,7 +36,7 @@ fetch("https://api.openweathermap.org/data/2.5/uvi/forecast?lat="+lat+"&lon="+lo
     console.log(response);
 });
 var getCity=response.data.id;
-fetch("https://api.openweathermap.org/data/2.5/forecast?id="+getCity+"&appid="+APIKey)
+fetch("http://api.openweathermap.org/data/2.5/forecast?id=524901&appid={API key}"+getCity+"&appid="+APIKey)
 .then(function(response){
     console.log(response);
     var forecastElement=document.querySelectorAll(".forecast");
