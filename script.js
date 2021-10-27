@@ -66,7 +66,7 @@ fetch("https://api.openweathermap.org/data/2.5/forecast?id="+getCity+"&appid="+A
 });
 }
 getCity.addEventListener("click",function(){
-    var searchTerm=inputElement.value;
+    var searchTerm=[].value;
     getWeather(searchTerm);
     searchHistory.push(searchTerm);
     localStorage.setItem("search",JSON.stringify(searchHistory));
